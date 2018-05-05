@@ -14,8 +14,17 @@ public class P1_FindMinAndMax {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
         
-        // YOUR CODE STARTS HERE
-
+        do {//do while loop
+        	System.out.println("Please enter integer");;
+        	int number = console.nextInt();
+        	int result = -1; // set to -1 to make sure we enter the loop
+        	int count = 0;
+        	try {//exception handling
+        	
+        	} catch (Exception e) {
+        		System.out.println("your input was -1");;
+        	}
+        
 
         // YOUR CODE ENDS HERE
         
@@ -23,4 +32,4 @@ public class P1_FindMinAndMax {
         System.out.println( "Minimum was " + min );
     }
 
-}
+}}
