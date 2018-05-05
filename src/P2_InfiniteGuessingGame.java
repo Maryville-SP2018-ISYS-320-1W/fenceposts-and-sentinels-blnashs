@@ -31,8 +31,21 @@ public class P2_InfiniteGuessingGame {
 			System.out.println("The secret number was " + secretNumber + ". Try again.");
 		}
 	}
+}
+	System.out.println("Enter your guiess: ");
+			int guess = Integer.parseInt(sc.nextLine());
+	while (guess != game.getNumber()) {
+		if (guess < game.getNumbe()) {
+			System.out.println("Your guess is too low.\n");;
+		} else if (guess > game.getNumber()) {
+			System.out.println("Your guess is too high.\n");;
+			
+		}
+	}
 
-	public static int getSecretNumber() {
+
+	public static int getSecretNumber();
+	{
 		Random generator = new Random();
 		return generator.nextInt(100) + 1;
 	}
@@ -50,6 +63,7 @@ public class P2_InfiniteGuessingGame {
 		} while (nextGuess < 0 || nextGuess > 100);
 
 		return nextGuess;
+		
 	}
 
 	public static int playGame(int secretNumber, int allowedGuesses) {
