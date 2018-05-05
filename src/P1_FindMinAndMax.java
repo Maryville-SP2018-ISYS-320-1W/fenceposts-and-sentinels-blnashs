@@ -30,6 +30,6 @@ public class P1_FindMinAndMax {
         
         System.out.println( "Maximum was " + max );
         System.out.println( "Minimum was " + min );
-    }
+    
 
-}}
+}}}
